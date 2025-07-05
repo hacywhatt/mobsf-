@@ -4,33 +4,62 @@ MOBSF KURULUM
 
 MobSF’yi https://github.com/MobSF/Mobile-Security-Framework-MobSF adresinden indirebilirsiniz .
 
-Kurulumu terminal üzerinden yapmak isterseniz.
+Kurulumu terminal üzerinden yapmak isterseniz;
 
 git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git
+
 cd Mobile-Security-Framework-MobSF
+
 apt-get install python3-venv
+
 pip3 install -r requirements.txt
+
 docker run -it -p 8000:8000  --name mobsf opensecurity/mobile-security-framework-mobsf
 
+lokal ip adresinize port forwarding yaptığınız portu ekleyerek gidin ve mobsf'in çalıştığını göreceksiniz.
+
+upload and analiz kısmına testi yapılacak .apk dosyası sürükleyip static analize başlayabilirsiniz. Unutmayın önce static analiz yapmadan dinamik analiz yaptıramazsınız.
+
+giriş bilgileri default olarak mobsf:mobsf 
 
 ![image](https://github.com/user-attachments/assets/f92bbf1f-1ce6-4c06-b3b3-62b244c81844)
 
-upload and analiz kısmına testi yapılacak .apk dosyası sürüklenir ve static analize başlanır. 
 
-![image](https://github.com/user-attachments/assets/edbf351a-5a95-41f9-a4cd-73c5d2d652e4)
+karşınıza aşağıdaki şekilde bilgiler çıkacak, bu kısımda yapılacak tek şey bize verilen bilgileri inceleyip dokümantasyona aktarmak.
+![image](https://github.com/user-attachments/assets/808db634-6691-4b1e-8c23-f1c3643b5b7e)
 
-dinamik analiz
+
+Dinamik analiz
+
+incelemek isterseniz dinamik analiz mimarisi;
 
 ![image](https://github.com/user-attachments/assets/648d79ee-9e63-4c88-a35d-ced5773e1ffb)
 
+static analiz bittikten sonra dynamic analyzer'e basın, karşınıza android ve ios için iki farklı seçenek çıkıyor. ios tarafını şirketteki cihaz üzerinden yaptığımız için işimiz sadece android ile.
 ![image](https://github.com/user-attachments/assets/990a2ab3-7aaa-4027-9fe4-8b65bb597814)
 
+dinamik analizi yapmak için Genymotion Android VM , Android Emulator AVD ve Corellium Android VM kullanabilirsiniz. Kullanacağınız sanal cihazların mobsf ile de uyumlu olmasına dikkat edin.
 ![image](https://github.com/user-attachments/assets/1297e335-7c3f-46aa-aff5-269822111045)
 
+ben Genymotion kullandığım için bunun üzerinden anlatıyorum ve samsung galaxy s6 11.0 mobsf ile uyumlu ve diğer cihazlara nazaran daha stabil geldiği için bunu tercih ediyorum. uyumlu olan başka bir cihaz ile devam edebilirsiniz.  
 ![image](https://github.com/user-attachments/assets/a513a37d-54a3-45d3-ad52-5b73f5d89d7e)
 
+başlattığınızda üstünde ip adresi ve portu yazıyor. öncesinde ping atarak cihazların birbirini gördüğünden emin olun, eğer görmüyorlarsa ağ ayarlarınızı değiştirin.
 ![image](https://github.com/user-attachments/assets/c5e75392-9406-4a29-a504-24c217758c1a)
 
+aşağıdaki komutla mobsf'i tekrar başlatın. 
+![image](https://github.com/user-attachments/assets/45ed1b56-2649-433b-9922-7d7195c2ce6b)
 
+apps available kısmında uygulama görünuyor. start diyoruz.
+![image](https://github.com/user-attachments/assets/eaff985b-05ba-4abe-9ee2-9ef046de51cf)
+
+gelecek olan arayüz aşağıdaki şekilde
+![image](https://github.com/user-attachments/assets/6d1eae79-ca65-44c7-bc2c-df992a9770e8)
+
+
+gerekli parametreleri seçip spawn and inject dediğinizde sanal cihazda uygulama otomatik olarak başlatılır. bu kısımdaki farklı parametreleri deneyerek ve arayüzdeki TLS/SSL security tester, activity tester gibi kısımları kullanarak mobil sızma testlerini gerçekleştirebilirisiniz. 
+![image](https://github.com/user-attachments/assets/a5a5b432-3a18-4bae-9168-e79a4c04fa99)
+
+generate report dediğinizde raporu size hazırlar, biraz uzun sürebilir. 
 
 
