@@ -7,15 +7,15 @@ MobSF’e https://github.com/MobSF/Mobile-Security-Framework-MobSF adresinden er
 Kurulumu terminal üzerinden yapmak isterseniz;
 
 
-sudo apt update -y && sudo apt install docker -y
+```sudo apt update -y && sudo apt install docker -y```
 
-docker pull opensecurity/mobile-security-framework-mobsf:latest
+```docker pull opensecurity/mobile-security-framework-mobsf:latest```
 
-docker run -it -p 8000:8000  --name mobsf opensecurity/mobile-security-framework-mobsf 
+```docker run -it -p 8000:8000  --name mobsf opensecurity/mobile-security-framework-mobsf```
 
 ya da 
 
-docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+```docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest```
 
 lokal ip adresinize port forwarding yaptığınız portu ekleyerek gidin ve mobsf'in çalıştığını göreceksiniz.
 
