@@ -22,7 +22,8 @@ giriş bilgileri default olarak mobsf:mobsf
 
 
 karşınıza aşağıdaki şekilde bilgiler çıkacak, bu kısımda yapılacak tek şey bize verilen bilgileri inceleyip dokümantasyona aktarmak.
-![image](https://github.com/user-attachments/assets/808db634-6691-4b1e-8c23-f1c3643b5b7e)
+![image](https://github.com/user-attachments/assets/77219635-d9d9-4718-94de-57735c8ed6cb)
+
 
 
 Dinamik analiz
@@ -35,7 +36,8 @@ static analiz bittikten sonra dynamic analyzer'e basın, karşınıza android ve
 ![image](https://github.com/user-attachments/assets/990a2ab3-7aaa-4027-9fe4-8b65bb597814)
 
 dinamik analizi yapmak için Genymotion Android VM , Android Emulator AVD ve Corellium Android VM kullanabilirsiniz. Kullanacağınız sanal cihazların mobsf ile de uyumlu olmasına dikkat edin.
-![image](https://github.com/user-attachments/assets/1297e335-7c3f-46aa-aff5-269822111045)
+![image](https://github.com/user-attachments/assets/e6678964-0a0c-49e0-b255-5a9b5d4d867b)
+
 
 ben Genymotion kullandığım için bunun üzerinden anlatıyorum ve samsung galaxy s6 11.0 mobsf ile uyumlu ve diğer cihazlara nazaran daha stabil geldiği için bunu tercih ediyorum. uyumlu olan başka bir cihaz ile devam edebilirsiniz.  
 ![image](https://github.com/user-attachments/assets/a513a37d-54a3-45d3-ad52-5b73f5d89d7e)
