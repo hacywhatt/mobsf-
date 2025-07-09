@@ -2,7 +2,7 @@
 
 MOBSF KURULUM
 
-MobSF’yi https://github.com/MobSF/Mobile-Security-Framework-MobSF adresinden indirebilirsiniz .
+MobSF’e https://github.com/MobSF/Mobile-Security-Framework-MobSF adresinden erişebilirsiniz.
 
 Kurulumu terminal üzerinden yapmak isterseniz;
 
