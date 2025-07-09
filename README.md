@@ -6,13 +6,9 @@ MobSF’yi https://github.com/MobSF/Mobile-Security-Framework-MobSF adresinden i
 
 Kurulumu terminal üzerinden yapmak isterseniz;
 
-git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git
 
-cd Mobile-Security-Framework-MobSF
-
-apt-get install python3-venv
-
-pip3 install -r requirements.txt
+sudo apt update -y && sudo apt install docker -y
+docker pull opensecurity/mobile-security-framework-mobsf:latest
 
 docker run -it -p 8000:8000  --name mobsf opensecurity/mobile-security-framework-mobsf
 
